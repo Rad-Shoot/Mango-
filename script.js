@@ -210,19 +210,3 @@ let contactSectionObserver= new IntersectionObserver((entries)=>{
 })
 
 contactSectionObserver.observe(contactInfoSection);
-
-//Making the form work and validating it
-let formInputs=document.querySelectorAll('.form-field input');
-let formLabels=document.querySelectorAll('.form-field label')
-formInputs.forEach((input,index)=>{
-    input.addEventListener('click',()=>{
-        formLabels[index].style.top='25%';
-        formLabels[index].style.color='hsl(120,80%,50%)';
-    })
-})
-
-let contactForm=document.querySelector('#contact-form');
-contactForm.addEventListener('submit',(event)=>{
-    event.preventDefault();
-    console.log('It worked!');
-})
