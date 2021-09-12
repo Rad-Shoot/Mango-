@@ -95,12 +95,12 @@ h1,h2,h3{
     background-color: black;
     transform: scaleX(0);
     transform-origin: left;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 
 .navlinks li:hover::after{
     transform: scaleX(1);
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 
 .navlinks a{
@@ -116,6 +116,7 @@ nav button{
 }
 
 .cta-btn{
+    color:white;
     background-color: var(--primary-accent-color);
     border: 2px solid transparent;
 }
