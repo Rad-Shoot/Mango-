@@ -501,6 +501,11 @@ section{
     transition: all 0.3s ease-in-out;
 }
 
+.form-field input:focus~label, .form-field input:valid~label{
+    top: 25%;
+    color: var(--primary-accent-color);
+}
+
 /*Contact Information Section*/
 #contact-information-section{
     min-height: 70vh;
